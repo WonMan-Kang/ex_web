@@ -4,24 +4,44 @@
     <meta charset="utf-8">
     <title>CSS</title>
     <style>
-      .saw {
-        color: gray;
+      h1{
+        border-bottom: 1px solid gray;
+        margin:0px;
+        padding: 20px;
+        text-align: center;
       }
-      .active {
-        color: red;
+      #grid{
+        display: grid;
+        grid-template-columns: 220px 1fr 1fr;
+        margin: 0px;
+      }
+      #article{
+        padding-left: 25px
+      }
+      #grid ol{
+        border-right: 1px solid gray;
+        width: 170px;
+        padding: 20px;
+        margin: 0px;
+      }
+      body{
       }
     </style>
   </head>
   <body>
-    <h1><a href="index.html"></a>WEB</h1>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="HTML\ex_html_chatting.html" >ex_html_chatting</a></li>
+        <li><a href="HTML\ex_html_comment">ex_html_comment</a></li>
+        <li><a href="HTML\ex_html_visitorAnalytics">ex_html_visitorAnalytics</a></li>
+      </ol>
 
+      <div id="article">
+        <h2>CSS</h2>
+        <p>cascading style sheets</p>
 
-    <ol>
-      <li><a href="ex_html.html">HTML</a> </li>
-      <li><a href="ex_CSS.html" >CSS</a> </li>
-      <li><a href="ex_JavaScript.html">JavaScript</a> </li>
-    </ol>
-
-
+      </div>
+    </div>
   </body>
 </html>
