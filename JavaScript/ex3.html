@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ex3-javascript</title>
+        <style>
+            .js {
+                font-weight: bold;
+                color: red;
+            }
+            h1{
+                color:yellow;
+            }
+
+            .w-btn {
+                position: relative;
+                border: none;
+                display: inline-block;
+                padding: 15px 30px;
+                border-radius: 15px;
+                font-family: "paybooc-Light", sans-serif;
+                box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+                text-decoration: none;
+                font-weight: 600;
+                transition: 0.25s;
+            }
+
+            .w-btn-gra3 {
+                background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000 );
+                color: white;
+            }
+
+            #first{
+                color:green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color:coral;">JavaScript란 무엇인가?</h1>
+        <h1 style="background-color:coral; color:powderblue;">JavaScript란 무엇인가?</h1>
+        <p><span id="first" class="js">JavaScript<br></span> 자바스크립트</p>
+
+        <input type="button" value="hi" onclick="alert('hi')">
+        <input type="button" class="w-btn w-btn-gra3" onclick="alert('hi')">
+
+        <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';">
+        <input type="button" value="day  " onclick="document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';">
+
+
+        <div></div>
+        <span></span>
+        
+
+        
+    </body>
+</html>
+
