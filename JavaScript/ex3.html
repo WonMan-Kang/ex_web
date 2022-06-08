@@ -74,6 +74,34 @@
         }
         ">
 
+        <input type="button" value="op1op2Cal" onclick="
+            add(5, 10);
+        ">
+
+        <script>
+
+            var coworks = ["going", "test"];
+            coworks.push("test1");
+
+            var i = 0;
+            while(i<coworks.length){
+                document.write('<li>' + coworks[i] + '</li>');
+                i++;
+            }
+
+            var alist = document.querySelectorAll('input');
+            i = 0;
+            while(i<alist.length){
+                document.write(alist[i] + '<br>');
+                i++;
+            }
+
+            function add(op1, op2){
+                var result = op1 + op2;
+                document.write(result + '<br>');
+            }
+
+        </script>
         
     </body>
 </html>
