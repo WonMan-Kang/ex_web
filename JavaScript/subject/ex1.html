@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        var rightId = "abcd";
+        var rightPw = "1234";
+
+
+        function login() {
+            var id = document.querySelector('#userid');
+            var pw = document.querySelector('#userPw');
+            if (id.value == rightId) {
+                if (pw.value == rightPw) {
+                    document.write(id.value + "님 방문을 환영합니다");
+                } else {
+                     alert("잘못된 비밀번호입니다.");
+                }
+            } else {
+                alert("존재하지 않는 아이디입니다.");
+            }
+        }
+
+        /*
+        function login(id, pw) {
+            document.write("로그인 클릭");
+            
+            if (id == rightId) {
+                if (pw == rightPw) {
+                    document.write(id + "님 방문을 환영합니다");
+                } else {
+                     alert("잘못된 비밀번호입니다.");
+                }
+            } else {
+                alert("존재하지 않는 아이디입니다.");
+            }
+        }
+
+        login(userId, userPw);
+        */
+
+    </script>
+    <style>
+        .login {
+            width: 500px;
+            margin: 200px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:beige;">
+    <div class="login">
+        <h1><u>로그인</u></h1><br>
+        <form>
+            ID <input id="userid" type="text" /><br>
+            PW <input id="userPw" type="password" />
+        </form>
+        <!---- <p class="button"><button>Login</button></p> ---->
+        <input type="button" value="Login" onclick="login()">
+        <a href="file:///C:/Users/%EA%B0%95%EB%AF%BC%EC%A0%95/Desktop/web/Doit/Proejct/project_2.html">회원가입</a>
+    </div>
+
+</body>
+
+</html>

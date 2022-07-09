@@ -15,6 +15,7 @@ var links = {
             alist[i].style.color = color;
             i++;
         }
+        document.write("dddddd\n");
     }
 }
 
